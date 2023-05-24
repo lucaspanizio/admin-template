@@ -3,13 +3,12 @@ import 'firebase/auth'
 
 // Web app's Firebase configuration
 const firebaseConfig = {
-  //apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  apiKey: "AIzaSyC9tffL8lcN-ggS-k6lwsS25gCiqyonNX4",
-  authDomain: "admin-template-react-next.firebaseapp.com",
-  projectId: "admin-template-react-next",
-  storageBucket: "admin-template-react-next.appspot.com",
-  messagingSenderId: "469913116310",
-  appId: "1:469913116310:web:7b94a7e80e204bdf9d6cb7"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
 if (!firebase.apps.length) {
